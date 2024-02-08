@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
 
+:root{
+    --sucess-color: green;
+    --error-color:red;
+}
+
 *{
     box-sizing: border-box;
 }
@@ -52,11 +57,43 @@ h1{
 }
 
 .form_control input:focus{
+    outline: 0;
+    border-color:black;
     padding: 7px;
 }
 
-.btn{
+
+.form_control.success input{
+    border-color: var(--sucess-color);
+}
+
+.form_control.error input{
+    border-color: var(--error-color);
+}
+
+.form_control small{
+    color: var(--error-color);
+    position: absolute;
+    left: 0;
+    visibility: hidden;
+}
+
+.form_control.error small{
+    visibility: visible;
+}
+
+.form button{
     border-radius: 10px;
-    width: 50%;
+    cursor: pointer;
+    background-color: rgb(175, 199, 199);
+    border:2px solid black;
+    margin-left: 37px;
+    width: 70%;
+    display: block;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
     
 }

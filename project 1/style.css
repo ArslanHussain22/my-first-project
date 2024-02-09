@@ -56,11 +56,11 @@ h1{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.form_control input:focus{
+/* .form_control input:focus{
     outline: 0;
     border-color:black;
     padding: 7px;
-}
+} */
 
 
 .form_control.success input{
